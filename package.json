@@ -1,0 +1,22 @@
+{
+  "name": "culqi-wrapper",
+  "version": "1.0.0",
+  "description": "Wrapper para API de Culqi",
+  "main": "culqi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseadrian/culqi-wrapper.git"
+  },
+  "keywords": [
+    "culqi"
+  ],
+  "author": "Joseadrian Ochoa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joseadrian/culqi-wrapper/issues"
+  },
+  "homepage": "https://github.com/joseadrian/culqi-wrapper#readme"
+}
