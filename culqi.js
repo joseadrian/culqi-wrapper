@@ -53,8 +53,18 @@ class Culqi {
                 'Authorization': 'Bearer ' + this.secret_key,
             }
         }, res => {
+            var data = '';
             res.on('data', d => {
-                var response = JSON.parse(d.toString());
+                data+= d;
+            });
+
+            res.on('end', () => {
+                try {
+                    var response = JSON.parse(data.toString());
+                } catch ( err ) {
+                    return callback(err);    
+                }
+                
                 if( response && response.object == 'error' ) {
                     callback(response);
                 } else {
